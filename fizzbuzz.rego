@@ -1,24 +1,26 @@
 package fizzbuzz
 
-import future.keywords
+three_div := input.value % 3 == 0
+five_div := input.value % 5 == 0
 
-fizz if {
-    input.value % 3 == 0
-    input.value % 5 != 0
+fizz {
+    three_div
+    not five_div
 }
 
-buzz if {
-    input.value % 5 == 0
-    input.value % 3 != 0
+buzz {
+    not three_div
+    five_div
 }
 
-fizzbuzz if {
-    input.value % 3 == 0
-    input.value % 5 == 0
+fizzbuzz {
+    three_div
+    five_div
 }
 
-number if {
+number {
     not fizz
     not buzz
     not fizzbuzz
 }
+

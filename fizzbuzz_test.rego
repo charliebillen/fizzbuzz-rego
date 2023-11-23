@@ -1,7 +1,5 @@
 package fizzbuzz
 
-import future.keywords
-
 test_fizzbuzz_number {
     number with input as { "value": 1 }
 
@@ -33,3 +31,4 @@ test_fizzbuzz_fizzbuzz {
     not fizzbuzz with input as { "value": 3 }
     not fizzbuzz with input as { "value": 5 }
 }
+
