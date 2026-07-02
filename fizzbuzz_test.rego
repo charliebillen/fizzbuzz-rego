@@ -32,3 +32,17 @@ test_fizzbuzz_fizzbuzz {
     not fizzbuzz with input as { "value": 5 }
 }
 
+test_fizzbuzz_output {
+    u := output with input as { }
+    u == "unknown"
+    a := output with input as { "value": 1 }
+    a == 1
+    b := output with input as { "value": 2 }
+    b == 2
+    c := output with input as { "value": 3 }
+    c == "Fizz"
+    d := output with input as { "value": 5 }
+    d == "Buzz"
+    e := output with input as { "value": 15 }
+    e == "FizzBuzz"
+}
